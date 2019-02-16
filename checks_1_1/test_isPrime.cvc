@@ -1,0 +1,20 @@
+#include "../civic.h"
+#include "../core.h"
+
+/* Testing isprime function */
+export int main()
+{
+    printInt((int)isprime(0));
+    printNewlines(1);
+
+    printInt((int)isprime(1));
+    printNewlines(1);
+
+    printInt((int)isprime(6));
+    printNewlines(1);
+
+    printInt((int)isprime(13));
+    printNewlines(1);
+
+    return 1;
+}

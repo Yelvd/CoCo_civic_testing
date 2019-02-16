@@ -1,0 +1,20 @@
+#include "../civic.h"
+#include "../coreio.h"
+
+/* Testing fibs function */
+export int main()
+{
+    fibs(0);
+    printNewlines(1);
+
+    fibs(1);
+    printNewlines(1);
+
+    fibs(5);
+    printNewlines(1);
+
+    fibs(10);
+    printNewlines(1);
+
+    return 1;
+}

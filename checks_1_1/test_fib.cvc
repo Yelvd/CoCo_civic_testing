@@ -1,0 +1,20 @@
+#include "../civic.h"
+#include "../core.h"
+
+/* Testing fib function */
+export int main()
+{
+    printInt(fib(0));
+    printNewlines(1);
+
+    printInt(fib(1));
+    printNewlines(1);
+
+    printInt(fib(6));
+    printNewlines(1);
+
+    printInt(fib(10));
+    printNewlines(1);
+
+    return 1;
+}

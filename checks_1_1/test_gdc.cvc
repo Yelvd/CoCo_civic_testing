@@ -1,0 +1,20 @@
+#include "../civic.h"
+#include "../core.h"
+
+/* Testing GCD function */
+export int main()
+{
+    printInt(gcd(6, 9));
+    printNewlines(1);
+
+    printInt(gcd(12, 8));
+    printNewlines(1);
+
+    printInt(gcd(7, 23));
+    printNewlines(1);
+
+    printInt(gcd(0, 0));
+    printNewlines(1);
+
+    return 1;
+}

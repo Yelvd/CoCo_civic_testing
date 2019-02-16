@@ -1,0 +1,20 @@
+#include "../civic.h"
+#include "../coreio.h"
+
+/* Testing fibs function */
+export int main()
+{
+    primes(0);
+    printNewlines(1);
+
+    primes(1);
+    printNewlines(1);
+
+    primes(5);
+    printNewlines(1);
+
+    primes(10);
+    printNewlines(1);
+
+    return 1;
+}

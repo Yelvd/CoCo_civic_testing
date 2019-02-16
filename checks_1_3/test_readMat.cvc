@@ -1,0 +1,21 @@
+#include "../civic.h"
+#include "../array.h"
+#include "../coreio.h"
+
+/* Testing fibs function */
+export int main()
+{    
+    int[3, 2] matI;
+    float[3, 2] matF;
+
+    /* scan matrices */
+    scanIntMat(matI);
+    printIntMat(matI);
+    printNewlines(1);
+
+    scanFloatMat(matF);
+    printFloatMat(matF);
+    printNewlines(2);
+
+    return 1;
+}

@@ -1,0 +1,46 @@
+#include "../civic.h"
+#include "../array.h"
+#include "../coreio.h"
+
+/* Testing fibs function */
+export int main()
+{    
+   /* matrix multiplication of
+     * 1 2   4 2
+     * 4 5 * 1 6
+     * 1 2
+    */
+
+    float[3, 2] matF;
+    float[2, 2] matF2;
+    float[3, 2] matFRes;
+
+    float[1, 1] matF3 = [[1.0]];
+    float[1, 1] matF4 = [[2.0]];
+    float[1, 1] matFRes2;
+
+    float[2, 2] matF5 = [[1.0, 1.0], [1.0, 2.0]];
+    float[3, 3] matF6 = [[1.0, 1.0, 1.0], [1.0, 2.0, 3.0]];
+    float[1, 1] matFRes3;
+
+    matF = [[1.0, 2.0], [4.0, 5.0], [1.0, 2.0]];
+    matF2 = [[4.0, 2.0], [1.0, 6.0]];
+
+    matMul(matF, matF2, matFRes);
+    printFloatMat(matFRes);
+    printNewlines(1);
+    printNewlines(1);
+
+    matMul(matF3, matF4, matFRes2);
+    printFloatMat(matFRes2);
+    printNewlines(1);
+    printNewlines(1);
+
+
+    /* This is undefined behavior. */
+    matMul(matF5, matF6, matFRes3);
+    printFloatMat(matFRes3);
+    printNewlines(1);
+
+    return 1;
+}

@@ -1,0 +1,20 @@
+#include "../civic.h"
+#include "../core.h"
+
+/* Testing fac function */
+export int main()
+{
+    printInt(fac(0));
+    printNewlines(1);
+
+    printInt(fac(1));
+    printNewlines(1);
+
+    printInt(fac(5));
+    printNewlines(1);
+
+    printInt(fac(10));
+    printNewlines(1);
+
+    return 1;
+}

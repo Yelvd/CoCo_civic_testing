@@ -1,0 +1,26 @@
+#include "../civic.h"
+#include "../array.h"
+#include "../coreio.h"
+
+/* Testing fibs function */
+export int main()
+{
+    int[3] vecI = [1, 2, 3];
+    float[4] vecF = [1.0, 2.0, 3.0];
+
+    /* print vectors */
+    printIntVec(vecI);
+    printNewlines(1);
+    printFloatVec(vecF);
+    printNewlines(2);
+
+    /*scan vectors */
+    scanIntVec(vecI);
+    printIntVec(vecI);
+    printNewlines(1);
+    scanFloatVec(vecF);
+    printFloatVec(vecF);
+    printNewlines(2);
+
+    return 1;
+}
