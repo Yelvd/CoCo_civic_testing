@@ -11,4 +11,3 @@ extern void scanIntMat(int[m, n] mat);
 extern void scanFloatMat(float[m, n] mat);
 
 extern void matMul(float[m, n] a, float[m, n] b, float[m, n] c);
-extern void queens(bool[m, n] a);

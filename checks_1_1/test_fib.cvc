@@ -4,10 +4,10 @@
 /* Testing fib function */
 export int main()
 {
-    printInt(fib(0));
+    printInt(fib(1));
     printNewlines(1);
 
-    printInt(fib(1));
+    printInt(fib(2));
     printNewlines(1);
 
     printInt(fib(6));

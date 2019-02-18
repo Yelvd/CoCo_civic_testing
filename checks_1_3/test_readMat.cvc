@@ -10,10 +10,12 @@ export int main()
 
     /* scan matrices */
     scanIntMat(matI);
+    printNewlines(1);
     printIntMat(matI);
     printNewlines(1);
 
     scanFloatMat(matF);
+    printNewlines(1);
     printFloatMat(matF);
     printNewlines(2);
 

@@ -11,15 +11,17 @@ export int main()
     /* print vectors */
     printIntVec(vecI);
     printNewlines(1);
+
     printFloatVec(vecF);
     printNewlines(2);
 
     /*scan vectors */
     scanIntVec(vecI);
-    printIntVec(vecI);
     printNewlines(1);
+
     scanFloatVec(vecF);
     printFloatVec(vecF);
+
     printNewlines(2);
 
     return 1;
