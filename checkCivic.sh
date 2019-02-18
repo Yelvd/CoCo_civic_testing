@@ -38,12 +38,13 @@ check_dir(){
             out=$(./runCivic.sh ${test} ${srcFiles}   < $inFile 2>&1)
         fi
 
-        DIFF=$(diff -y -w -B --width=70 <(printf "$out") <(printf "$ref"))
+        DIFF=$(diff -y -w -B --width=70 <(printf "$out" | tr -d ' \n') <(printf "$ref" | tr -d ' \n'))
 
         if [ $? -ne 0 ]; then
             printf "\e[31m FAIL \e[0m\n"
             printf "Diff result:\nStudent output \t\t\t  | Expected output\n"
-            printf "$DIFF\n"
+            diff -y -w -B --width=70 <(printf "$out") <(printf "$ref")
+            printf "\n"
         else
             printf "\e[32m OK \e[0m\n"
         fi

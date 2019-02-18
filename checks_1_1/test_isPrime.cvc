@@ -7,7 +7,7 @@ export int main()
     printInt((int)isprime(0));
     printNewlines(1);
 
-    printInt((int)isprime(1));
+    printInt((int)isprime(2));
     printNewlines(1);
 
     printInt((int)isprime(6));
