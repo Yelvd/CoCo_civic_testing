@@ -1,5 +1,5 @@
 #include "../civic.h"
-#include "../coreio.h"
+extern void fibs(int n);
 
 /* Testing fibs function */
 export int main()

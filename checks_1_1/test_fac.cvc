@@ -1,5 +1,5 @@
 #include "../civic.h"
-#include "../core.h"
+extern int fac(int n);
 
 /* Testing fac function */
 export int main()

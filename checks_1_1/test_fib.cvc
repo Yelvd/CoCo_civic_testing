@@ -1,5 +1,5 @@
 #include "../civic.h"
-#include "../core.h"
+extern int fib(int n);
 
 /* Testing fib function */
 export int main()

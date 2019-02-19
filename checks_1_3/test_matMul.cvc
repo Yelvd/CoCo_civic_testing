@@ -1,6 +1,7 @@
 #include "../civic.h"
-#include "../array.h"
-#include "../coreio.h"
+extern void printFloatMat(float[m, n] mat);
+
+extern void matMul(float[m, n] a, float[m, n] b, float[m, n] c);
 
 /* Testing fibs function */
 export int main()

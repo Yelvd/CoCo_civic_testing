@@ -1,6 +1,9 @@
 #include "../civic.h"
-#include "../array.h"
-#include "../coreio.h"
+extern void printIntMat(int[m, n] mat);
+extern void printFloatMat(float[m, n] mat);
+
+extern void scanIntMat(int[m, n] mat);
+extern void scanFloatMat(float[m, n] mat);
 
 /* Testing fibs function */
 export int main()

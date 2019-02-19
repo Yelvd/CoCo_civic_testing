@@ -1,6 +1,9 @@
 #include "../civic.h"
-#include "../array.h"
-#include "../coreio.h"
+extern void printIntVec(int[n] vec);
+extern void printFloatVec(float[n] vec);
+
+extern void scanIntVec(int[n] vec);
+extern void scanFloatVec(float[n] vec);
 
 /* Testing fibs function */
 export int main()

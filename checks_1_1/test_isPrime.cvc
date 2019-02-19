@@ -1,5 +1,5 @@
 #include "../civic.h"
-#include "../core.h"
+extern bool isprime(int n);
 
 /* Testing isprime function */
 export int main()
