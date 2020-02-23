@@ -1,8 +1,9 @@
 #!/bin/bash
+set -e
 
 # Dir with the compiler assembler and vm.
 # Change to where the toolchain is stored
-bin='../../toolchain-uva-linux-x64/bin'
+bin='/home/jelle/TA/2018-2019/CoCo/toolchain-uva-linux-x64/bin'
 
 comp_run() {
     # Read all cmd line args.

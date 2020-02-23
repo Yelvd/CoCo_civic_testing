@@ -31,14 +31,23 @@ check_dir(){
 
         inFile="${test%.*}.in"
         if [ ! -f $inFile ]; then
-            ref=$(./runCivic.sh ${test} ${checkFiles})
-            out=$(./runCivic.sh ${test} ${srcFiles})
+            ref=$(./runCivic.sh ${test} ${checkFiles} 2>&1)
+            out=$(./runCivic.sh ${test} ${srcFiles}   2>&1)
         else
             ref=$(./runCivic.sh ${test} ${checkFiles} < $inFile 2>&1)
             out=$(./runCivic.sh ${test} ${srcFiles}   < $inFile 2>&1)
         fi
 
+        if [ $? -ne 1 ]; then
+            printf "\e[31m FAIL \e[0m\n"
+            printf "Compiler Error:\n"
+            printf "$out"
+            printf "\n\n"
+            continue
+        fi
+
         DIFF=$(diff -y -w -B --width=70 <(printf "$out" | tr -d ' \n') <(printf "$ref" | tr -d ' \n'))
+
 
         if [ $? -ne 0 ]; then
             printf "\e[31m FAIL \e[0m\n"
