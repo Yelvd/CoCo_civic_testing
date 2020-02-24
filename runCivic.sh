@@ -1,6 +1,16 @@
 #!/bin/bash
 set -e
 
+#!/bin/bash
+function finish {
+    for f in $files; do
+        rm -f "$f.as__"
+        rm -f "$f.out__"
+    done
+}
+
+trap finish EXIT
+
 # Dir with the compiler assembler and vm.
 # Change to where the toolchain is stored
 bin='/home/jelle/TA/2018-2019/CoCo/toolchain-uva-linux-x64/bin'
